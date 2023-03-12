@@ -544,7 +544,7 @@ PAGES
 
 .span-pages {
   position: absolute;
-  top: 0;
+  top: 4rem;
   left: 0;
   font-size: 1.5rem;
   font-weight: 500;
