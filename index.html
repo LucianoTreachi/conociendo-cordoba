@@ -1635,18 +1635,21 @@
         <h2>¿Tienes alguna sugerencia?</h2>
         
         <form class="form" id="form" autocomplete="off">
-          <div class="input-container">
-            <input type="text" class="input" id="input-name" name="name" placeholder="Nombre">
+          <div class="container-input">
+            <label class="label-input" for="input-name">Nombre</label>
+            <input type="text" class="input" id="input-name" name="name">
             <p class="alert" id="alert-name">Completa este campo</p>
           </div>
 
-          <div class="input-container">
-            <input type="text" class="input" id="input-email" name="email" placeholder="Email">
+          <div class="container-input">
+            <label class="label-input" for="input-email">Email</label>
+            <input type="text" class="input" id="input-email" name="email">
             <p class="alert" id="alert-email">Completa este campo</p>
           </div>
 
-          <div class="input-container">
-            <textarea class="textarea" id="textarea" name="textarea" placeholder="Sugerencia"></textarea>
+          <div class="container-input">
+            <label class="label-input" for="textarea">Mensaje</label>
+            <textarea class="textarea" id="textarea" name="textarea"></textarea>
             <p class="alert" id="alert-textarea">Completa este campo</p>
           </div>
 
