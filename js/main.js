@@ -25,9 +25,9 @@ const modalContactError = document.getElementById("modal-contact-error");
 const closeModalContact = document.querySelectorAll(".close-modal-contact");
 
 /* Regular Expressions */
-const expName = /^[\S][\DÀ-ÿ\s]{1,30}$/
-const expEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9]{4,63}\.){1,125}[A-Z]{2,4}$/i
-const expMessage = /^[\S][0-9a-zA-ZÀ-ÿ\s\,.¡!¿?]{3,1000}$/
+const expName = /^[\S][\DÀ-ÿ\s]{1,30}$/;
+const expEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{4,63}\.){1,125}(com|net|org|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)\b$/i;
+const expMessage = /^[\S][0-9a-zA-ZÀ-ÿ\s\,.¡!¿?]{3,1000}$/;
 
 const campos = {
   nombre: false,
