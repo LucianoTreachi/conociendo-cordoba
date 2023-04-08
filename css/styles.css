@@ -214,12 +214,20 @@ HOME
   line-height: 1.3;
   color: var(--white);
   text-transform: uppercase;
+  animation: show;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-delay: .1s;
 }
 
 .home p {
   font-size: 2rem;
   color: var(--white);
   line-height: 1.5;
+  animation: show;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-delay: .3s;
 }
 
 /*=============================== 
@@ -282,6 +290,7 @@ CONTACT
 }
 
 .container-input {
+  position: relative;
   margin-bottom: 2rem;
 }
 
@@ -302,7 +311,7 @@ CONTACT
 }
 
 .textarea {
-  padding: 2rem;
+  padding: 2rem 3rem 2rem 2rem;
   width: 100%;
   resize: none;
   font-size: 1.8rem;
@@ -324,7 +333,23 @@ CONTACT
   animation: rotate624 1s ease-in-out both;
 }
 
-.submit {
+.check {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(-50%);
+  font-size: 2rem;
+  color: var(--color-1);
+  display: none;
+}
+
+.check.active {
+  display: block;
+  animation: zoomIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.submit { 
+  margin-top: 1rem;
   padding: 2rem;
   border-radius: 5px;
   cursor: pointer;

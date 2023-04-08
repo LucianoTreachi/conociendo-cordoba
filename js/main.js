@@ -37,15 +37,20 @@ const campos = {
 
 /* Validate Regular Expressions */
 function validateRegularExpressions(e) {
+  
+  const check = e.target.parentElement.querySelector('.check');
+  
   switch (e.target.id) {
 
     case "input-name":
       if (expName.test(e.target.value)) {
         alertName.classList.remove("active");
+        check.classList.add("active");
         campos.nombre = true;
       }
       else {
         alertName.classList.add("active");
+        check.classList.remove("active");
         campos.nombre = false;
       }
       break;
@@ -53,10 +58,12 @@ function validateRegularExpressions(e) {
     case "input-email":
       if (expEmail.test(e.target.value)) {
         alertEmail.classList.remove("active");
+        check.classList.add("active");
         campos.correo = true;
       }
       else {
         alertEmail.classList.add("active");
+        check.classList.remove("active");
         campos.correo = false;
       }
       break;
@@ -64,10 +71,12 @@ function validateRegularExpressions(e) {
     case "textarea":
       if (expMessage.test(e.target.value)) {
         alertTextarea.classList.remove("active");
+        check.classList.add("active");
         campos.mensaje = true;
       }
       else {
         alertTextarea.classList.add("active");
+        check.classList.remove("active");
         campos.mensaje = false;
       }
       break;
