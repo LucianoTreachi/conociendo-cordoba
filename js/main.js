@@ -88,16 +88,14 @@ inputEmail.addEventListener("input", () => {
   inputEmail.value = inputEmail.value.replace(/ /g, "");
 })
 
-/* Inputs focus, keyup and blur */
+/* Inputs events */
 inputs.forEach((input) => {
-  input.addEventListener('focus', validateRegularExpressions);
-  input.addEventListener('keyup', validateRegularExpressions);
+  input.addEventListener('input', validateRegularExpressions);
   input.addEventListener('blur', validateRegularExpressions);
 });
 
-/* Textarea focus, keyup and blur */
-textarea.addEventListener('focus', validateRegularExpressions);
-textarea.addEventListener('keyup', validateRegularExpressions);
+/* Textarea events */
+textarea.addEventListener('input', validateRegularExpressions);
 textarea.addEventListener('blur', validateRegularExpressions);
 
 /* Submit */
