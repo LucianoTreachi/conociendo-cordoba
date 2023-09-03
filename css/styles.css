@@ -37,6 +37,10 @@ p {
   padding: 8rem 9% 4rem;
 }
 
+.bottom-section {
+  padding: 4rem 9% 8rem;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
@@ -111,6 +115,7 @@ p {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -120,6 +125,7 @@ p {
   0% {
     transform: scale(0.5);
   }
+
   30% {
     transform: scale(1);
   }
@@ -129,15 +135,19 @@ p {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
+
   25% {
     transform: rotate(3deg) translate3d(0, 0, 0);
   }
+
   50% {
     transform: rotate(-3deg) translate3d(0, 0, 0);
   }
+
   75% {
     transform: rotate(1deg) translate3d(0, 0, 0);
   }
+
   100% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
@@ -147,9 +157,11 @@ p {
   0% {
     transform: scaleY(.005) scaleX(0);
   }
+
   50% {
     transform: scaleY(.005) scaleX(1);
   }
+
   100% {
     transform: scaleY(1) scaleX(1);
   }
@@ -263,6 +275,11 @@ PLACES
 .places .images .image img {
   width: 100%;
   border-radius: 6px;
+  transition: .3s;
+}
+
+.places .images .image img:hover {
+  transform: scale(1.02);
 }
 
 .places .images .image h3 {
@@ -277,6 +294,14 @@ PLACES
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--color-1);
+}
+
+.places .images .image .link i {
+  transition: .3s;
+}
+
+.places .images .image .link:hover i {
+  transform: translateX(8px);
 }
 
 /*=============================== 
@@ -351,7 +376,7 @@ CONTACT
   animation: zoomIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
-.submit { 
+.submit {
   margin-top: 1rem;
   padding: 2rem;
   border-radius: 5px;
@@ -363,6 +388,11 @@ CONTACT
   font-size: 1.8rem;
   color: var(--white);
   width: 100%;
+  transition: .3s;
+}
+
+.submit:hover {
+  opacity: .85;
 }
 
 /*=============================== 
@@ -494,11 +524,13 @@ MODAL CONTACT
 }
 
 @keyframes pulse0112 {
+
   0%,
   100% {
     transform: scale(0);
     opacity: 0.5;
   }
+
   50% {
     transform: scale(1);
     opacity: 1;
@@ -683,10 +715,14 @@ RESPONSIVE
     padding: 8rem 2rem 4rem;
   }
 
+  .bottom-section {
+    padding: 4rem 2rem 8rem;
+  }
+
   .hero-pages {
     padding: 2rem;
   }
-  
+
   .footer-pages {
     padding: 4rem 2rem;
   }
