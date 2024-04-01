@@ -204,7 +204,7 @@ HOME
 .home {
   min-height: 78vh;
   background-color: var(--black);
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/home/home-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/home/home-bg.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -588,6 +588,7 @@ MODAL CONTACT
 }
 
 .error p {
+  font-size: 1.8rem;
   color: var(--black);
   line-height: 1.5;
 }
@@ -735,7 +736,7 @@ RESPONSIVE
   }
 
   .home {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../assets/home/home-bg-cel.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../assets/home/home-bg-cel.webp");
   }
 
   .home h1 {
