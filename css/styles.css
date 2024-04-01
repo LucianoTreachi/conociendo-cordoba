@@ -246,18 +246,18 @@ HOME
 }
 
 /*=============================== 
-EMPEZAR
+INFORMATION
 ================================*/
 
-.empezar {
+.information {
   animation: show 1s;
 }
 
-.empezar .container p {
+.information .container p {
   font-size: 1.8rem;
 }
 
-.empezar .container p:not(:last-child) {
+.information .container p:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -783,10 +783,6 @@ RESPONSIVE
   .home p {
     width: 100%;
     font-size: 1.8rem;
-  }
-
-  .empezar .container p {
-    font-size: 1.6rem;
   }
 
   .info p {
