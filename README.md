@@ -6,16 +6,19 @@
 
 [![Captura de pantalla del proyecto](https://i.postimg.cc/g2hWXkq0/website.jpg)](https://postimg.cc/dhJXgFfM)
 
-## Explora el sitio web
-
-Accede aquí → [Conociendo Córdoba](https://conociendocordoba.netlify.app/)
-
 ## Tecnologías utilizadas
 
 - **HTML:** Estructura y contenido.
+
 - **CSS:** Estilización y diseño responsivo.
+
 - **JavaScript:** Funcionalidad interactiva.
+
 - **Cloudinary:** Alojamiento y gestión de imágenes.
+
+## Explora el sitio web
+
+Accede aquí → [Conociendo Córdoba](https://conociendocordoba.netlify.app/)
 
 ## Desarrollado por
 
