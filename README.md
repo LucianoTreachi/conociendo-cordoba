@@ -8,13 +8,10 @@
 
 ## Tecnologías utilizadas
 
-- **HTML:** Estructura y contenido.
-
-- **CSS:** Estilización y diseño responsivo.
-
-- **JavaScript:** Funcionalidad interactiva.
-
-- **Cloudinary:** Alojamiento y gestión de imágenes.
+- HTML
+- CSS
+- JavaScript
+- Cloudinary
 
 ## Explora el sitio web
 
